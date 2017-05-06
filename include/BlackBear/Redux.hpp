@@ -15,8 +15,6 @@ private:
     std::vector<ListenerT> m_listeners;
 
 public:
-    Store() = default;
-
     Store(ReducerT&& reducer, StateT&& state) noexcept
         : m_reducer(std::move_if_noexcept(reducer))
         , m_state(std::move_if_noexcept(state))
