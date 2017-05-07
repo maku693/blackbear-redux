@@ -3,6 +3,7 @@
 #include <vector>
 
 namespace BlackBear {
+namespace Redux {
 
 template <class ReducerT, class StateT>
 struct Store final {
@@ -53,4 +54,5 @@ auto makeStore(ReducerT&& reducer, StateT&& state)
     };
 }
 
+}
 }
